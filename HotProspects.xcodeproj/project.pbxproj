@@ -3,16 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F921FC525F94784008AA784 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0F921FC425F94784008AA784 /* CodeScanner */; };
 		0FD71F9C25F7C7B7002E75BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9B25F7C7B7002E75BC /* AppDelegate.swift */; };
 		0FD71F9E25F7C7B7002E75BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9D25F7C7B7002E75BC /* SceneDelegate.swift */; };
 		0FD71FA025F7C7B7002E75BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9F25F7C7B7002E75BC /* ContentView.swift */; };
 		0FD71FA225F7C7BA002E75BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD71FA125F7C7BA002E75BC /* Assets.xcassets */; };
 		0FD71FA525F7C7BA002E75BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD71FA425F7C7BA002E75BC /* Preview Assets.xcassets */; };
 		0FD71FA825F7C7BA002E75BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD71FA625F7C7BA002E75BC /* LaunchScreen.storyboard */; };
+		0FD71FB325F7E41F002E75BC /* ExampleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FB225F7E41F002E75BC /* ExampleTabView.swift */; };
+		0FD71FB525F7E66F002E75BC /* ResultTypeExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FB425F7E66F002E75BC /* ResultTypeExampleView.swift */; };
+		0FD71FB725F7E980002E75BC /* ManualObservableObjectExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FB625F7E980002E75BC /* ManualObservableObjectExampleView.swift */; };
+		0FD71FB925F7EA84002E75BC /* ImageInterpolationExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FB825F7EA84002E75BC /* ImageInterpolationExampleView.swift */; };
+		0FD71FBB25F7EB73002E75BC /* ContextMenuExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FBA25F7EB73002E75BC /* ContextMenuExampleView.swift */; };
+		0FD71FBD25F7ECA3002E75BC /* LocalNotificationsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FBC25F7ECA3002E75BC /* LocalNotificationsExampleView.swift */; };
+		0FD71FBF25F7FC3D002E75BC /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FBE25F7FC3D002E75BC /* ProspectsView.swift */; };
+		0FD71FC125F7FC4E002E75BC /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FC025F7FC4E002E75BC /* MeView.swift */; };
+		0FD71FC325F80007002E75BC /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71FC225F80007002E75BC /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		0FD71FA425F7C7BA002E75BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FD71FA725F7C7BA002E75BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FD71FA925F7C7BA002E75BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD71FB025F7E2E5002E75BC /* EnvironmentVariableExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariableExampleView.swift; sourceTree = "<group>"; };
+		0FD71FB225F7E41F002E75BC /* ExampleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTabView.swift; sourceTree = "<group>"; };
+		0FD71FB425F7E66F002E75BC /* ResultTypeExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeExampleView.swift; sourceTree = "<group>"; };
+		0FD71FB625F7E980002E75BC /* ManualObservableObjectExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualObservableObjectExampleView.swift; sourceTree = "<group>"; };
+		0FD71FB825F7EA84002E75BC /* ImageInterpolationExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationExampleView.swift; sourceTree = "<group>"; };
+		0FD71FBA25F7EB73002E75BC /* ContextMenuExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuExampleView.swift; sourceTree = "<group>"; };
+		0FD71FBC25F7ECA3002E75BC /* LocalNotificationsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsExampleView.swift; sourceTree = "<group>"; };
+		0FD71FBE25F7FC3D002E75BC /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		0FD71FC025F7FC4E002E75BC /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		0FD71FC225F80007002E75BC /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F921FC525F94784008AA784 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,7 @@
 		0FD71F8F25F7C7B7002E75BC = {
 			isa = PBXGroup;
 			children = (
+				0FD71FAF25F7E2BD002E75BC /* Examples */,
 				0FD71F9A25F7C7B7002E75BC /* HotProspects */,
 				0FD71F9925F7C7B7002E75BC /* Products */,
 			);
@@ -59,10 +81,13 @@
 				0FD71F9B25F7C7B7002E75BC /* AppDelegate.swift */,
 				0FD71F9D25F7C7B7002E75BC /* SceneDelegate.swift */,
 				0FD71F9F25F7C7B7002E75BC /* ContentView.swift */,
+				0FD71FC225F80007002E75BC /* Prospect.swift */,
 				0FD71FA125F7C7BA002E75BC /* Assets.xcassets */,
 				0FD71FA625F7C7BA002E75BC /* LaunchScreen.storyboard */,
 				0FD71FA925F7C7BA002E75BC /* Info.plist */,
 				0FD71FA325F7C7BA002E75BC /* Preview Content */,
+				0FD71FBE25F7FC3D002E75BC /* ProspectsView.swift */,
+				0FD71FC025F7FC4E002E75BC /* MeView.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -73,6 +98,20 @@
 				0FD71FA425F7C7BA002E75BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FD71FAF25F7E2BD002E75BC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				0FD71FB025F7E2E5002E75BC /* EnvironmentVariableExampleView.swift */,
+				0FD71FB225F7E41F002E75BC /* ExampleTabView.swift */,
+				0FD71FB425F7E66F002E75BC /* ResultTypeExampleView.swift */,
+				0FD71FB625F7E980002E75BC /* ManualObservableObjectExampleView.swift */,
+				0FD71FB825F7EA84002E75BC /* ImageInterpolationExampleView.swift */,
+				0FD71FBA25F7EB73002E75BC /* ContextMenuExampleView.swift */,
+				0FD71FBC25F7ECA3002E75BC /* LocalNotificationsExampleView.swift */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +130,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				0F921FC425F94784008AA784 /* CodeScanner */,
+			);
 			productName = HotProspects;
 			productReference = 0FD71F9825F7C7B7002E75BC /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 0FD71F8F25F7C7B7002E75BC;
+			packageReferences = (
+				0F921FC325F94784008AA784 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 0FD71F9925F7C7B7002E75BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD71FBD25F7ECA3002E75BC /* LocalNotificationsExampleView.swift in Sources */,
+				0FD71FC325F80007002E75BC /* Prospect.swift in Sources */,
+				0FD71FBB25F7EB73002E75BC /* ContextMenuExampleView.swift in Sources */,
+				0FD71FBF25F7FC3D002E75BC /* ProspectsView.swift in Sources */,
 				0FD71F9C25F7C7B7002E75BC /* AppDelegate.swift in Sources */,
+				0FD71FB725F7E980002E75BC /* ManualObservableObjectExampleView.swift in Sources */,
+				0FD71FB325F7E41F002E75BC /* ExampleTabView.swift in Sources */,
 				0FD71F9E25F7C7B7002E75BC /* SceneDelegate.swift in Sources */,
+				0FD71FB925F7EA84002E75BC /* ImageInterpolationExampleView.swift in Sources */,
 				0FD71FA025F7C7B7002E75BC /* ContentView.swift in Sources */,
+				0FD71FC125F7FC4E002E75BC /* MeView.swift in Sources */,
+				0FD71FB525F7E66F002E75BC /* ResultTypeExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F921FC325F94784008AA784 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F921FC425F94784008AA784 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F921FC325F94784008AA784 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FD71F9025F7C7B7002E75BC /* Project object */;
 }
