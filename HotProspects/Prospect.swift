@@ -44,11 +44,15 @@ class Prospects: ObservableObject {
     }
  */
     private func save() {
+        //find the documents directory associated with this app...
         let fileName = self.files.getDocumentsDirectory().appendingPathComponent(Self.saveKey)
         
         do {
+            //encode the array of people to JSON
             let data = try JSONEncoder().encode(people)
+            //write what we just encoded to directory we found
             try data.write(to: fileName, options: [.atomicWrite, .completeFileProtection])
+            //print it to the console
             let input = try String(contentsOf: fileName)
             print(input)
         } catch {
