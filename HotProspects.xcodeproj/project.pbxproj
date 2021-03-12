@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F921FC525F94784008AA784 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0F921FC425F94784008AA784 /* CodeScanner */; };
+		0F98BDC425FB0F0B00D66C21 /* Extension-GetDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98BDC325FB0F0B00D66C21 /* Extension-GetDocuments.swift */; };
 		0FD71F9C25F7C7B7002E75BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9B25F7C7B7002E75BC /* AppDelegate.swift */; };
 		0FD71F9E25F7C7B7002E75BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9D25F7C7B7002E75BC /* SceneDelegate.swift */; };
 		0FD71FA025F7C7B7002E75BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD71F9F25F7C7B7002E75BC /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F98BDC325FB0F0B00D66C21 /* Extension-GetDocuments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-GetDocuments.swift"; sourceTree = "<group>"; };
 		0FD71F9825F7C7B7002E75BC /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD71F9B25F7C7B7002E75BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD71F9D25F7C7B7002E75BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				0FD71FA925F7C7BA002E75BC /* Info.plist */,
 				0FD71FA325F7C7BA002E75BC /* Preview Content */,
 				0FD71FBE25F7FC3D002E75BC /* ProspectsView.swift */,
+				0F98BDC325FB0F0B00D66C21 /* Extension-GetDocuments.swift */,
 				0FD71FC025F7FC4E002E75BC /* MeView.swift */,
 			);
 			path = HotProspects;
@@ -201,6 +204,7 @@
 				0FD71F9E25F7C7B7002E75BC /* SceneDelegate.swift in Sources */,
 				0FD71FB925F7EA84002E75BC /* ImageInterpolationExampleView.swift in Sources */,
 				0FD71FA025F7C7B7002E75BC /* ContentView.swift in Sources */,
+				0F98BDC425FB0F0B00D66C21 /* Extension-GetDocuments.swift in Sources */,
 				0FD71FC125F7FC4E002E75BC /* MeView.swift in Sources */,
 				0FD71FB525F7E66F002E75BC /* ResultTypeExampleView.swift in Sources */,
 			);

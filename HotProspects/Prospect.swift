@@ -17,22 +17,42 @@ class Prospect: Codable, Identifiable {
 }
 
 class Prospects: ObservableObject {
+   var files = FileManager()
+    
     @Published private(set) var people: [Prospect]
     static let saveKey = "SavedData"
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
-            if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
-                self.people = decoded
-                return
-            }
+        let fileName = self.files.getDocumentsDirectory().appendingPathComponent(Self.saveKey)
+        do {
+            let data = try Data(contentsOf: fileName)
+            let people = try JSONDecoder().decode([Prospect].self, from: data)
+            self.people = people
+        } catch {
+            print("Unable to load saved data")
+            self.people = []
         }
-        self.people = []
     }
     
+    
+   /*
+     SAVE DATA WITH USER DEFAULTS
     private func save() {
         if let encoded = try? JSONEncoder().encode(people) {
             UserDefaults.standard.set(encoded, forKey: Self.saveKey)
+        }
+    }
+ */
+    private func save() {
+        let fileName = self.files.getDocumentsDirectory().appendingPathComponent(Self.saveKey)
+        
+        do {
+            let data = try JSONEncoder().encode(people)
+            try data.write(to: fileName, options: [.atomicWrite, .completeFileProtection])
+            let input = try String(contentsOf: fileName)
+            print(input)
+        } catch {
+            print(error.localizedDescription)
         }
     }
     
