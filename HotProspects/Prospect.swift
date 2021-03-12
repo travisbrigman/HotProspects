@@ -46,4 +46,16 @@ class Prospects: ObservableObject {
         prospect.isContacted.toggle()
         save()
     }
+    
+    func reverse(_ prospect: Prospect) {
+        objectWillChange.send()
+        people.reverse()
+        save()
+    }
+    
+    func nameSort(_ prospect: Prospect) {
+        objectWillChange.send()
+        people.sort { $0.name < $1.name }
+        save()
+    }
 }

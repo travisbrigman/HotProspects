@@ -12,6 +12,7 @@ import UserNotifications
 struct ProspectsView: View {
     
     @State private var isShowingScanner = false
+    @State private var showingSheet = false
     
     enum FilterType {
         case none, contacted, uncontacted
@@ -42,6 +43,7 @@ struct ProspectsView: View {
     }
     
     @EnvironmentObject var prospects: Prospects
+    
     var body: some View {
         NavigationView {
             List{
@@ -71,7 +73,7 @@ struct ProspectsView: View {
                 }
             }
             .navigationBarTitle(title)
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: Button("Sort", action: { self.showingSheet = true }), trailing: Button(action: {
                 self.isShowingScanner = true
                 
             }) {
@@ -79,10 +81,24 @@ struct ProspectsView: View {
                 Text("Scan")
             })
                 .sheet(isPresented: $isShowingScanner) {
-                    CodeScannerView(codeTypes: [.qr], simulatedData: "Travis Brigman\nTravis1000@icloud.com", completion: self.handleScan)
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "Sorrel Brigman\nTravis1000@icloud.com", completion: self.handleScan)
+            }
+                .actionSheet(isPresented: $showingSheet) {
+                    ActionSheet(
+                        title: Text("Sort List"),
+                        message: Text("choose a sort method"),
+                        buttons: [
+                            .default(Text("By Most Recent")) { self.prospects.reverse(Prospect())
+                            },
+                            .default(Text("By Name")) { self.prospects.nameSort(Prospect())
+                            },
+                            .cancel()
+                        ]
+                    )
             }
         }
     }
+    
     
     func handleScan(result: Result<String, CodeScannerView.ScanError>) {
         self.isShowingScanner = false
@@ -107,10 +123,6 @@ struct ProspectsView: View {
             content.title = "Contact \(prospect.name)"
             content.subtitle = prospect.email
             content.sound = UNNotificationSound.default
-            
-            //            var dateComponents = DateComponents()
-            //            dateComponents.hour = 9
-            //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
             
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             
